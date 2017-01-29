@@ -16,8 +16,11 @@
                     <div class="thumbnail">
 
                         <div class="caption">
-                            <h3>{{ $post->title }}</h3>
-                            <p>{{ $post->content }}</p>
+                            <div class="page-header info">
+                            <h3>{{ str_limit($post->title, 25) }}</h3>
+                            <br>
+                            </div>
+                            <p>{{ str_limit($post->content, 90) }}</p>
                         </div>
                     </div>
                 </div>
