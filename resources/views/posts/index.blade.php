@@ -21,6 +21,9 @@
                                     <br>
                                 </div>
                                 <p>{{ str_limit($post->content, 90) }}</p>
+                                <div class="btn-group" role="group">
+                                    <a href="{{ route('post.show', $post->id) }}" type="button" class="btn btn-default">Lire la suite &rarr;</a>
+                                </div>
                             </div>
                         </div>
                     </div>
