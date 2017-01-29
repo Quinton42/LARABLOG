@@ -11,7 +11,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-         // App\User::truncate();  //Décommenter et relancer les seeds pour vider la base de donner
+        // App\User::truncate();  //Décommenter et relancer les seeds pour vider la base de donner
         factory(\App\User::class, 20)->create();
     }
 }
